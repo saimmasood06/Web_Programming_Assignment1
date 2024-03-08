@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Application Form</title>
+<link rel="stylesheet" href="q3.css">
+<script src="q3.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Job Application Form</h1>
+  <form action="#" method="post" >
+    
+    <!-- Personal Information -->
+    <h2>Personal Information</h2>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="street">Address:</label>
+    <input type="text" id="street" name="street">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city">
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state">
+    <label for="zipcode">ZIP Code:</label>
+    <input type="text" id="zipcode" name="zipcode">
+    
+    <!-- Resume and Cover Letter -->
+    <h2>Resume and Cover Letter</h2>
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">  
+    <label for="coverletter">Cover Letter:</label>
+    <textarea id="coverletter" name="coverletter" rows="4"></textarea>
+    
+    <!-- Education -->
+    <h2>Education</h2>
+    <label for="education-level">Highest Level of Education Attained:</label>
+    <input type="text" id="education-level" name="education-level">
+    <label for="university">Name of School/University:</label>
+    <input type="text" id="university" name="university">
+    <label for="major">Major/Area of Study:</label>
+    <input type="text" id="major" name="major">
+    <label for="graduation-year">Graduation Year:</label>
+    <input type="text" id="graduation-year" name="graduation-year">
+    
+    <!-- Employment History -->
+    <h2>Employment History</h2>
+    <label for="job-title">Previous Job Titles:</label>
+    <input type="text" id="job-title" name="job-title">
+    <label for="company-name">Company Names:</label>
+    <input type="text" id="company-name" name="company-name">
+    <label for="employment-dates">Employment Dates:</label>
+    <input type="text" id="employment-dates" name="employment-dates">
+    <label for="job-responsibilities">Job Responsibilities:</label>
+    <textarea id="job-responsibilities" name="job-responsibilities" rows="4"></textarea>
+    
+    <!-- Skills -->
+    <h2>Skills</h2>
+    <label for="skills">Relevant Skills:</label>
+    <input type="text" id="skills" name="skills">
+    <label for="certifications">Certifications:</label>
+    <input type="text" id="certifications" name="certifications">
+    
+    <!-- Availability -->
+    <h2>Availability</h2>
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="start-date" name="start-date">
+    <label for="work-schedule">Preferred Work Schedule:</label>
+    <input type="text" id="work-schedule" name="work-schedule">
+    <label for="relocate">Willingness to Relocate:</label>
+    <select id="relocate" name="relocate">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+    
+    <!-- References -->
+    <h2>References</h2>
+    <label for="ref-name">Reference Name:</label>
+    <input type="text" id="ref-name" name="ref-name">
+    <label for="ref-contact">Reference Contact Information:</label>
+    <input type="text" id="ref-contact" name="ref-contact">
+    <label for="relationship">Relationship to Applicant:</label>
+    <input type="text" id="relationship" name="relationship">
+    
+    <!-- Additional Questions -->
+    <h2>Additional Questions</h2>
+    <label for="why-join">Why do you want to work for this company?</label>
+    <textarea id="why-join" name="why-join" rows="4"></textarea>
+    
+    <!-- Consent and Agreement -->
+    <h2>Consent and Agreement</h2>
+    <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label><br>
+    <label><input type="checkbox" name="privacy-policy" required> I acknowledge the Privacy Policy</label>
+    
+    <button type="submit" >Submit </button>
+  </form>
+</div>
+
+
+<button onclick="viewApplicationsAsTable()" type="view-table-button">View Applications as Table</button>
+<!--button id="view-table-button" type="view-table-button">View Applications as Table</button-->
+<div id="data-table-container" class="data-table-container"></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
